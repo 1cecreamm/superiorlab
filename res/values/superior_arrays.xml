@@ -102,6 +102,19 @@
         <item>2</item>
     </string-array>
 
+    <!-- Clock AM/PM -->
+    <string-array name="status_bar_am_pm_entries" translatable="false">
+        <item>@string/status_bar_am_pm_hidden</item>
+        <item>@string/status_bar_am_pm_small</item>
+        <item>@string/status_bar_am_pm_normal</item>
+    </string-array>
+
+    <string-array name="status_bar_am_pm_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Quick QS pulldown -->
     <string-array name="quick_pulldown_entries">
         <item>@string/quick_pulldown_none</item>
@@ -116,6 +129,4 @@
         <item>2</item>
         <item>3</item>
     </string-array>
-
 </resources>
-
