@@ -52,6 +52,19 @@
         <item>2</item>
     </string-array>
 
+    <!-- Clock position -->
+    <string-array name="status_bar_clock_position_entries" translatable="false">
+        <item>@string/status_bar_clock_position_left</item>
+        <item>@string/status_bar_clock_position_center</item>
+        <item>@string/status_bar_clock_position_right</item>
+    </string-array>
+
+    <string-array name="status_bar_clock_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Pulse music visualizer -->
     <string-array name="pulse_render_mode_entries">
        <item>@string/pulse_render_mode_fading_bars</item>
@@ -105,3 +118,4 @@
     </string-array>
 
 </resources>
+
