@@ -506,4 +506,11 @@
     <string name="combined_status_bar_signal_icons_title">Combined signal icons</string>
     <string name="combined_status_bar_signal_icons_summary">Enable combined signal icons\n(WARNING: a soft reboot will occur upon enabling combined signal icons)</string>
 
+    <!-- Volume TextView -->
+    <string name="volume_persen_switch_title">Volume Percentage</string>
+    <string name="volume_persen_switch_summary">show volume panel percentage</string>
+    <string name="volume_persen_style_title">Percentage Location</string>
+    <string name="volume_persen_style_top">Top</string>
+    <string name="volume_persen_style_bottom">Bottom</string>
+
 </resources>
