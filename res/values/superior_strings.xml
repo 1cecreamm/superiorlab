@@ -456,7 +456,9 @@
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
 
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_category_title">Battery customizations</string>
+    <string name="battery_settings_title">Battery Settings</string>   
+    <string name="battery_settings_summary">Battery Styles, Battery Percentage</string>
+    <string name="battery_style_category_title">Battery Styles</string>
     <string name="status_bar_battery_style_title">Battery style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
