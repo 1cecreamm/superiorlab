@@ -41,6 +41,12 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
+    <Preference
+        android:key="battery_settings_category"
+        android:fragment="com.superior.lab.fragments.BatterySettings"
+        android:title="@string/battery_settings_title"
+        android:summary="@string/battery_settings_summary" />
+
     <com.superior.support.preferences.SystemSettingSwitchPreference
         android:key="bluetooth_show_battery"
         android:title="@string/bluetooth_battery_title"
