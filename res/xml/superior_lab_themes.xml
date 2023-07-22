@@ -63,7 +63,7 @@
             android:key="android.theme.customization.brightness_slider"
             android:title="@string/theme_customization_brightness_slider_title"
             android:summary="@string/theme_customization_brightness_slider_summary"
-            android:fragment="org.superior.lab.fragments.BrightnessSlider" />
+            android:fragment="com.superior.lab.fragments.BrightnessSlider" />
 
         <!-- Navbar Style -->
         <Preference

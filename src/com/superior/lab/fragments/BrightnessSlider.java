@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.superior.lab.fragments;
+package com.superior.lab.fragments;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -55,7 +55,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.bumptech.glide.Glide;
 
-import com.android.internal.util.derp.ThemeUtils;
+import com.android.internal.util.superior.ThemeUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
