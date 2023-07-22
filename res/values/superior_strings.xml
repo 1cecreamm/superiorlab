@@ -410,6 +410,10 @@
     <!-- SB paddings -->
     <string name="status_bar_left_padding">SB Left Padding</string>
     <string name="status_bar_right_padding">SB Right Padding</string>
+    
+    <!-- Brigtness Slider Style -->
+    <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
+    <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
 
     <!-- UDFPS settings -->
     <string name="udfps_category">UDFPS</string>
