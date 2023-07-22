@@ -20,7 +20,7 @@
 
     <PreferenceCategory
         android:title="@string/general_category">
-        
+
     <Preference
         android:key="network_traffic_settings"
         android:title="@string/network_traffic_title"
