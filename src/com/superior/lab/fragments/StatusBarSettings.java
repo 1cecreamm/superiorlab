@@ -46,6 +46,9 @@ import android.text.format.DateFormat;
 import android.util.Log;
 import com.superior.support.preferences.SecureSettingListPreference;
 
+import com.android.internal.util.superior.SuperiorUtils;
+import com.superior.support.preferences.OverlaySwitchPreference;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -54,6 +57,9 @@ import java.util.Collections;
 
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
+    private static final String COMBINED_ICONS = "com.android.systemui.flags.no_combined_icons";
+
+    private OverlaySwitchPreference mCombinedIcons;
 
     private static final String KEY_STATUS_BAR_AM_PM = "status_bar_am_pm";
     private SecureSettingListPreference mStatusBarAmPm;
@@ -67,6 +73,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mStatusBarAmPm = findPreference(KEY_STATUS_BAR_AM_PM);
+
+        mCombinedIcons = (OverlaySwitchPreference) findPreference(COMBINED_ICONS);
+        mCombinedIcons.setOnPreferenceChangeListener(this);
 
     }
 
@@ -82,7 +91,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mCombinedIcons) {
+            SuperiorUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        }
         return false;
     }
 
