@@ -51,6 +51,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mPhotosSpoof;
 
+    private Preference mCombinedSignalIcons;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -61,6 +63,9 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
         mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
         mPhotosSpoof.setOnPreferenceChangeListener(this);
+
+        mCombinedSignalIcons = findPreference("persist.sys.flags.combined_signal_icons");
+        mCombinedSignalIcons.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -68,6 +73,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         if (preference == mPhotosSpoof) {
             boolean value = (Boolean) objValue;
             SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
+            return true;
+        } else if (preference == mCombinedSignalIcons) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putIntForUser(getContentResolver(),
+                Settings.Secure.ENABLE_COMBINED_SIGNAL_ICONS, value ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         }
         return false;

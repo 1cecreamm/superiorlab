@@ -26,6 +26,12 @@
             android:title="@string/enable_fingerprint_ripple_effect_title"
             android:summary="@string/enable_fingerprint_ripple_effect_summary"
             android:defaultValue="true" />
+            
+        <com.superior.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.flags.combined_signal_icons"
+            android:title="@string/combined_status_bar_signal_icons_title"
+            android:summary="@string/combined_status_bar_signal_icons_summary"
+            android:defaultValue="true" />
 
         <com.superior.support.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
